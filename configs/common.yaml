@@ -1,0 +1,19 @@
+# Setup shared by all methods (Section "Experimental setup" of the paper).
+dataset: cifar10            # cifar10 | fashion_mnist
+num_classes: 10
+num_clients: 20             # K
+participation: 1.0          # q, fraction of clients sampled per round
+dirichlet_alpha: 0.5
+rounds: 200                 # T
+drift: none                 # none | sudden | incremental | recurrent
+drift_fraction: 1.0         # delta, fraction of clients that drift
+missing_prob: 0.0           # p_miss, per-class removal probability
+seed: 0
+batch_size: 64
+momentum: 0.9
+weight_decay: 1.0e-5
+max_grad_norm: null         # gradient-norm clipping, off unless set
+device: cuda
+deterministic: false
+data_dir: data
+output_dir: outputs

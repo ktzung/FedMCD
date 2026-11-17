@@ -1,0 +1,2 @@
+local_epochs: 5             # encoder training and fine-tuning
+lr: 0.01

@@ -1,0 +1,5 @@
+local_epochs: 5
+lr: 0.01
+beta1: 0.7
+beta2: 0.3
+beta3: 0.7

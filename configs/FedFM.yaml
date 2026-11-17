@@ -1,0 +1,5 @@
+local_epochs: 5
+lr: 0.01
+anchor_weight: 1.0
+anchor_temperature: 0.1
+anchor_start_round: 20

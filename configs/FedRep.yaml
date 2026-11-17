@@ -1,0 +1,4 @@
+classifier_epochs: 1
+classifier_lr: 0.1
+encoder_epochs: 5
+encoder_lr: 0.01

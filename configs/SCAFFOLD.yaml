@@ -1,0 +1,5 @@
+local_epochs: 5
+lr: 0.01
+momentum: 0.0
+weight_decay: 0.0
+global_lr: 1.0

@@ -1,0 +1,3 @@
+local_epochs: 5
+lr: 0.01
+detection_threshold: 0.5

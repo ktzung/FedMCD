@@ -1,0 +1,39 @@
+# Step 1: balanced classifier
+balanced_epochs: 5          # E_bal
+balanced_lr: 0.1
+balanced_samples_per_class: 5   # h_max
+# Step 2: local classifier
+classifier_epochs: 1        # E_clf
+classifier_lr: 0.1
+residual_penalty: 0.01      # mu_res
+# Step 3: encoder training
+encoder_epochs: 5           # E_rep
+encoder_lr: 0.01
+prototype_gamma: 20.0       # prototype weight = label entropy / gamma
+prototype_temperature: 0.1  # tau
+prototype_start_round: 20
+# Pre-step: cone radius
+max_cone_radius: 0.25       # rho_max
+frequency_kappa: 1.0
+coverage_classes: 2.0       # coverage factor = min(1, C_eff / coverage_classes)
+warmup_rounds: 20           # T_warm
+ramp_rounds: 20             # T_ramp
+# Step 4: anchor update
+anchor_update: true
+anchor_warmup_rounds: 20
+anchor_update_every: 5      # Delta T_anchor
+anchor_gram_weight: 0.25    # eta_G
+anchor_ema: 0.9             # beta_A
+anchor_iterations: 5        # I_iter
+anchor_min_clients: 2
+anchor_max_residual: 1.0
+anchor_max_condition: 1000000.0
+# Steps 5-6: grouping and class-aware averaging
+dbscan_eps: 0.1             # epsilon
+group_on_residuals: true
+class_aware_averaging: true
+# Steps 1-2 and 3 switches used by the component ablation
+cone_projection: true
+prototype_alignment: true
+evaluation_encoder_broadcast: true
+diagnostics: false

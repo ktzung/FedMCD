@@ -1,0 +1,3 @@
+# Partial participation: 100 clients, 20 sampled per round.
+num_clients: 100
+participation: 0.2

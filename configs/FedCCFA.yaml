@@ -1,0 +1,13 @@
+balanced_epochs: 5
+balanced_lr: 0.1
+balanced_samples_per_class: 5
+classifier_epochs: 1
+classifier_lr: 0.1
+encoder_epochs: 5
+encoder_lr: 0.01
+prototype_gamma: 20.0       # prototype weight = label entropy / gamma
+prototype_temperature: 0.1
+prototype_start_round: 20
+dbscan_eps: 0.1
+class_support_mask: false   # true: FedCCFA-PCS+mask
+evaluation_encoder_broadcast: true

@@ -1,0 +1,4 @@
+local_epochs: 5             # global model
+personal_epochs: 5          # personalized model
+lr: 0.01
+personal_lambda: 5.0
